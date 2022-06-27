@@ -3,25 +3,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HeroFormTemplateComponent } from './template/hero-form-template.component';
-import { HeroFormReactiveComponent } from './reactive/hero-form-reactive.component';
-import { ForbiddenValidatorDirective } from './shared/forbidden-name.directive';
-import { IdentityRevealedValidatorDirective } from './shared/identity-revealed.directive';
-import { UniqueAlterEgoValidatorDirective } from './shared/alter-ego.directive';
+import { CatsOverviewComponent } from './cats/cats-overview/cats-overview.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule,
   ],
   declarations: [
     AppComponent,
-    HeroFormTemplateComponent,
-    HeroFormReactiveComponent,
-    ForbiddenValidatorDirective,
-    IdentityRevealedValidatorDirective,
-    UniqueAlterEgoValidatorDirective
+    CatsOverviewComponent,
+    CatsDetailViewComponent
   ],
   bootstrap:    [ AppComponent ]
 })

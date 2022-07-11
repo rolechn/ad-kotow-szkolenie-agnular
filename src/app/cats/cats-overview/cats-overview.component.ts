@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cat } from '../model';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cats-overview',
@@ -10,7 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 export class CatsOverviewComponent implements OnInit {
   cats: Cat[] = [];
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute,
+              private router: Router) {
+  }
 
   ngOnInit(): void {
     this.loadCats();
@@ -21,5 +23,9 @@ export class CatsOverviewComponent implements OnInit {
         this.cats = data['cats'];
       }
     );
+  }
+
+  onClick($event: Cat) {
+    this.router.navigate(['cat-details'], {state: {data: $event}});
   }
 }

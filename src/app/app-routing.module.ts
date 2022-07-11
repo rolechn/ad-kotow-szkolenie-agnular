@@ -16,7 +16,7 @@ export const appRoutes: Routes = [
     resolve: {cats: CatsDataResolver}
   },
   {
-    path: 'cat-details',
+    path: 'cats/:catName',
     component: CatsDetailViewComponent
   }
 ];

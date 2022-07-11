@@ -26,6 +26,6 @@ export class CatsOverviewComponent implements OnInit {
   }
 
   onClick($event: Cat) {
-    this.router.navigate(['cat-details'], {state: {data: $event}});
+    this.router.navigate(['cats', $event.name]);
   }
 }

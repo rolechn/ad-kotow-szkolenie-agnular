@@ -45,4 +45,8 @@ export class CatsDataService {
   getCatsData(): Observable<Cat[]> {
     return of(this.allCats);
   }
+
+  getCat(name: string): Observable<Cat > {
+    return of(this.allCats.find(c => c.name === name)!);
+  }
 }

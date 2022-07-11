@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Cat } from '../model';
+import { CatsDataService } from '../cats-data.service';
+import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 
 @Component({
   selector: 'app-cats-detail-view',
@@ -8,14 +10,16 @@ import { Cat } from '../model';
 })
 export class CatsDetailViewComponent implements OnInit {
 
-  constructor() {
+  constructor(private catsDataService: CatsDataService, private activatedRoute: ActivatedRoute) {
+    this.route = activatedRoute.snapshot;
   }
 
-  @Input()
   cat: Cat;
+  private route: ActivatedRouteSnapshot;
 
   ngOnInit(): void {
-    this.cat = history.state.data;
+    const catName = this.route.params['catName'];
+    this.catsDataService.getCat(catName).subscribe(data => this.cat = data);
   }
 
 }

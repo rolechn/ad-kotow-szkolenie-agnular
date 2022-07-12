@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CatsOverviewComponent } from './cats/cats-overview/cats-overview.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CatsDetailViewComponent } from './cats/cats-detail-view/cats-detail-view.component';
+import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adoption-form.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,9 @@ import { CatsDetailViewComponent } from './cats/cats-detail-view/cats-detail-vie
   ],
   declarations: [
     AppComponent,
-    CatsOverviewComponent
+    CatsOverviewComponent,
+    CatsDetailViewComponent,
+    CatsAdoptionFormComponent
   ],
   bootstrap:    [ AppComponent ]
 })

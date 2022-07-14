@@ -7,6 +7,7 @@ import { CatsOverviewComponent } from './cats/cats-overview/cats-overview.compon
 import { AppRoutingModule } from './app-routing.module';
 import { CatsDetailViewComponent } from './cats/cats-detail-view/cats-detail-view.component';
 import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adoption-form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adopti
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,

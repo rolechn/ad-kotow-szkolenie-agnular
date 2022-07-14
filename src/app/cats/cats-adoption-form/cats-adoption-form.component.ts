@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
+import { CatsAdoptionService } from './cats-adoption.service';
 
 @Component({
   selector: 'app-cats-adoption-form',
@@ -17,7 +18,7 @@ export class CatsAdoptionFormComponent implements OnInit {
   adoptionForm!: FormGroup;
   private readonly PHONE_REGEX = /^[0-9\-\s]+$/;
 
-  constructor() {
+  constructor(private catsAdoptionService: CatsAdoptionService) {
   }
 
   ngOnInit(): void {
@@ -34,6 +35,12 @@ export class CatsAdoptionFormComponent implements OnInit {
 
   submit(): void {
     this.closeMe.emit(true);
+    const adoptData  ={
+      catsName: this.catsName,
+      personName: this.name.value,
+      personPhone: this.phone.value
+    };
+    this.catsAdoptionService.adopt(adoptData);
   }
 
   cancelAdoptionForm(): void {

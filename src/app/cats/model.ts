@@ -4,3 +4,10 @@ export interface Cat {
   breed: string;
   picUrl: string;
 }
+
+export interface AdoptionData {
+  catsName: string;
+  personName: string;
+  personPhone: string;
+}
+

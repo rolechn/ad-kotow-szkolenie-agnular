@@ -35,7 +35,7 @@ export class CatsAdoptionFormComponent implements OnInit {
 
   submit(): void {
     this.closeMe.emit(true);
-    const adoptData  ={
+    const adoptData = {
       catsName: this.catsName,
       personName: this.name.value,
       personPhone: this.phone.value

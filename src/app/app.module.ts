@@ -15,8 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   declarations: [
     AppComponent,
-    CatsOverviewComponent,
-    CatsDetailViewComponent
+    CatsOverviewComponent
   ],
   bootstrap:    [ AppComponent ]
 })

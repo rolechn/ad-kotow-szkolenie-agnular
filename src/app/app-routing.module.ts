@@ -6,11 +6,11 @@ import { CatsOverviewComponent } from './cats/cats-overview/cats-overview.compon
 export const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'cats-overview',
+    redirectTo: 'cats',
     pathMatch: 'full'
   },
   {
-    path: 'cats-overview',
+    path: 'cats',
     component: CatsOverviewComponent,
     resolve: {cats: CatsDataResolver}
   }

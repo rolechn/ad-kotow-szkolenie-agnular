@@ -5,6 +5,14 @@
             <span class="cats-name">{{cat.name}}</span>
             <span>{{cat.ageMonths}} miesięcy</span>
             <span>{{cat.breed}}</span>
+            <ng-container [ngSwitch]="cat.characteristic">
+                <ng-container *ngSwitchCase="'LOWCA'">
+                    <ng-container *ngTemplateOutlet="ruchliwy"></ng-container>
+                </ng-container>
+                <ng-container *ngSwitchCase="'DOMATOR'">
+                    <ng-container *ngTemplateOutlet="ospaly"></ng-container>
+                </ng-container>
+            </ng-container>
         </div>
     </div>
 
@@ -21,3 +29,11 @@
         <p>rezerwacja wysłana, będziemy się kontaktować</p>
     </div>
 </section>
+
+<ng-template #ruchliwy>
+    <span>ten kot potrzebuje dużo ruchu i lubi wychodzić</span>
+</ng-template>
+
+<ng-template #ospaly>
+    <span>klasyczny kanapowiec</span>
+</ng-template>

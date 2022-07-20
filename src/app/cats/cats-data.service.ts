@@ -1,4 +1,4 @@
-import { Cat } from './model';
+import { Cat, CatCharacteristic } from './model';
 
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
@@ -13,7 +13,8 @@ export class CatsDataService {
       name: 'Puszek',
       ageMonths: 8,
       breed: 'maine coon',
-      picUrl: 'puszek1.jpg'
+      picUrl: 'puszek1.jpg',
+      characteristic: CatCharacteristic.LOWCA
     },
     {
       name: 'Mruczek',
@@ -25,7 +26,8 @@ export class CatsDataService {
       name: 'Kiciek',
       ageMonths: 52,
       breed: 'perski',
-      picUrl: 'kiciek.jpg'
+      picUrl: 'kiciek.jpg',
+      characteristic: CatCharacteristic.DOMATOR
     },
     {
       name: 'Kłaczek',

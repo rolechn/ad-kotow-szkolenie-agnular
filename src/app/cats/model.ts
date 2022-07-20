@@ -3,6 +3,7 @@ export interface Cat {
   ageMonths : number;
   breed: string;
   picUrl: string;
+  characteristic?:CatCharacteristic
 }
 
 export interface AdoptionData {
@@ -11,3 +12,7 @@ export interface AdoptionData {
   personPhone: string;
 }
 
+export enum CatCharacteristic {
+  LOWCA = 'LOWCA',
+  DOMATOR = 'DOMATOR'
+}

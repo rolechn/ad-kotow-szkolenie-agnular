@@ -13,31 +13,36 @@ export class CatsDataService {
       name: 'Puszek',
       ageMonths: 8,
       breed: 'maine coon',
-      picUrl: 'puszek1.jpg'
+      picUrl: 'puszek1.jpg',
+      vaccinated: true
     },
     {
       name: 'Mruczek',
       ageMonths: 36,
       breed: 'brytyjczyk',
-      picUrl: 'mruczek1.jpg'
+      picUrl: 'mruczek1.jpg',
+      vaccinated: false
     },
     {
       name: 'Kiciek',
       ageMonths: 52,
       breed: 'perski',
-      picUrl: 'kiciek.jpg'
+      picUrl: 'kiciek.jpg',
+      vaccinated:true
     },
     {
       name: 'Kłaczek',
       ageMonths: 81,
       breed: 'brytyjczyk',
-      picUrl: 'klaczek.jpg'
+      picUrl: 'klaczek.jpg',
+      vaccinated: true
     },
     {
       name: 'Pimpuś',
       ageMonths: 6,
       breed: 'dachowiec',
-      picUrl: 'pimpus.jpg'
+      picUrl: 'pimpus.jpg',
+      vaccinated: true
     }
   ];
 
@@ -48,5 +53,12 @@ export class CatsDataService {
 
   getCat(name: string): Observable<Cat > {
     return of(this.allCats.find(c => c.name === name)!);
+  }
+
+  checkVaccination(vaccinated: boolean): string {
+    if (vaccinated)
+      return "&#10003";
+    else
+      return "&#10060";
   }
 }

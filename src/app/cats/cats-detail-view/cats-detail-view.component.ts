@@ -32,4 +32,11 @@ export class CatsDetailViewComponent implements OnInit {
     this.adoptionFormActive = false;
     this.showConfirmMsg = success;
   }
+
+  checkVaccination(vaccinated: boolean): string {
+    if (vaccinated=== true)
+      return "\u2713";
+    else
+      return '\u274C';
+  }
 }

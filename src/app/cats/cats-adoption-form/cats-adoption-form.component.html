@@ -1,5 +1,9 @@
 <form [formGroup]="adoptionForm" #formDir="ngForm" (ngSubmit)="submit()">
     <p class="cats-name">adoptujesz kota: {{catsName}}</p>
+    <cats-bordered-panel>
+        <h4 content-for-border>{{catsName}} jest uroczy</h4>
+        <p content-for-border>{{catsName}} będzie twoim przyjecielem </p>
+    </cats-bordered-panel>
 
     <div [hidden]="formDir.submitted">
         <div>

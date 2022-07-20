@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CatsDetailViewComponent } from './cats/cats-detail-view/cats-detail-view.component';
 import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adoption-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CatsBorderedPanelComponent } from './cats/bordered-panel/cats-bordered-panel.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     CatsOverviewComponent,
     CatsDetailViewComponent,
-    CatsAdoptionFormComponent
+    CatsAdoptionFormComponent,
+    CatsBorderedPanelComponent
   ],
   bootstrap:    [ AppComponent ]
 })

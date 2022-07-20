@@ -1,0 +1,27 @@
+.outer {
+    width: 600px;
+    height: 80px;
+    border: 4px dot-dash darkmagenta;
+    box-shadow: 2px 2px 6px 0 #444444;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.backgroundDark {
+    background: darkorchid;
+}
+.backgroundLight {
+    background: lightpink;
+}
+
+.inner {
+    display: block;
+    max-height: 40px;
+    padding: 5px 30px 5px 30px;
+
+    box-shadow: 2px 2px 6px 0 darkolivegreen;
+    width: 300px;
+    border: 3px dotted darkmagenta;
+}

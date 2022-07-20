@@ -1,0 +1,7 @@
+<div class="outer" [ngClass]="{'backgroundDark' : !backgroundFlipped,'backgroundLight' : backgroundFlipped }"
+     (mouseover)="onHover()"
+     (mouseout)="offHover()">
+    <div [ngClass]="{'backgroundDark' : backgroundFlipped,'backgroundLight' : !backgroundFlipped }" class="inner">
+        <ng-content select="[content-for-border]"></ng-content>
+    </div>
+</div>

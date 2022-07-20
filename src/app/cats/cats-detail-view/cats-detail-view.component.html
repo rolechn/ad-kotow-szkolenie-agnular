@@ -4,7 +4,12 @@
         <div class="cols">
             <span class="cats-name">{{cat.name}}</span>
             <span>{{cat.ageMonths}} miesięcy</span>
-            <span>Zaszczepiony : {{cat.vacinated}}</span>
+          <div class="vacinTrue">
+            <span *ngIf="cat.vacinated">Zaszczepiony: &#10004; </span>
+          </div>
+          <div class="vacinFalse">
+            <span *ngIf="!cat.vacinated">Zaszczepiony: ❌  </span>
+          </div>
             <span>{{cat.breed}}</span>
         </div>
     </div>

@@ -6,7 +6,16 @@
     display: flex;
     flex-direction: column;
 }
-
+.vacinTrue{
+  display: flex;
+  flex-direction: column;
+  color : green;
+}
+.vacinFalse{
+  display: flex;
+  flex-direction: column;
+  color : red;
+}
 .cats-name {
     font-weight: bold;
     font-size: 16px;

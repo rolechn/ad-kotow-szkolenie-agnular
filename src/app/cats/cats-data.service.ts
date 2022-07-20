@@ -13,31 +13,36 @@ export class CatsDataService {
       name: 'Puszek',
       ageMonths: 8,
       breed: 'maine coon',
-      picUrl: 'puszek1.jpg'
+      picUrl: 'puszek1.jpg',
+      vacinated : false
     },
     {
       name: 'Mruczek',
       ageMonths: 36,
       breed: 'brytyjczyk',
-      picUrl: 'mruczek1.jpg'
+      picUrl: 'mruczek1.jpg',
+      vacinated : true
     },
     {
       name: 'Kiciek',
       ageMonths: 52,
       breed: 'perski',
-      picUrl: 'kiciek.jpg'
+      picUrl: 'kiciek.jpg',
+      vacinated : true
     },
     {
       name: 'Kłaczek',
       ageMonths: 81,
       breed: 'brytyjczyk',
-      picUrl: 'klaczek.jpg'
+      picUrl: 'klaczek.jpg',
+      vacinated: true
     },
     {
       name: 'Pimpuś',
       ageMonths: 6,
       breed: 'dachowiec',
-      picUrl: 'pimpus.jpg'
+      picUrl: 'pimpus.jpg',
+      vacinated: true
     }
   ];
 

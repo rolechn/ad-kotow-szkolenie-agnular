@@ -14,35 +14,40 @@ export class CatsDataService {
       ageMonths: 8,
       breed: 'maine coon',
       picUrl: 'puszek1.jpg',
-      vaccinated: true
+      vaccinated: true,
+      description: 'Puszek nie lubi brudnej kuwety.'
     },
     {
       name: 'Mruczek',
       ageMonths: 36,
       breed: 'brytyjczyk',
       picUrl: 'mruczek1.jpg',
-      vaccinated: false
+      vaccinated: false,
+      description: 'Mruczek ma niezłe jazdy po kocimiętce.'
     },
     {
       name: 'Kiciek',
       ageMonths: 52,
       breed: 'perski',
       picUrl: 'kiciek.jpg',
-      vaccinated:true
+      vaccinated:true,
+      description: 'Kiciek to najsympatyczniejszy kot pod słońcem!.'
     },
     {
       name: 'Kłaczek',
       ageMonths: 81,
       breed: 'brytyjczyk',
       picUrl: 'klaczek.jpg',
-      vaccinated: true
+      vaccinated: true,
+      description: 'Kłaczek nie pozostawia po sobie żadnych kłaczków!'
     },
     {
       name: 'Pimpuś',
       ageMonths: 6,
       breed: 'dachowiec',
       picUrl: 'pimpus.jpg',
-      vaccinated: true
+      vaccinated: true,
+      description: 'Pimpuś lubi czasem chodzić swoimi ścieżkami.'
     }
   ];
 

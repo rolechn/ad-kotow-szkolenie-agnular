@@ -9,13 +9,21 @@ import { CatsDetailViewComponent } from './cats/cats-detail-view/cats-detail-vie
 import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adoption-form.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {TooltipModule} from "ng2-tooltip-directive";
+//import {MatTooltipModule} from '@angular/material';
+
+
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    TooltipModule,
+    //MatTooltipModule
   ],
   declarations: [
     AppComponent,

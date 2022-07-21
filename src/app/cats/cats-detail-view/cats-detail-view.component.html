@@ -1,6 +1,10 @@
 <section>
     <div class="side-by-side">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="">
+        <button (click)="decrementIndex()">&lt;</button>
+        <div class="square-img-box">
+            <img src="./assets/cats-pic/{{cat.picUrl[picIndex]}}" alt="">
+        </div>
+        <button (click)="incrementIndex()">&gt;</button>
         <div class="cols">
             <span class="cats-name">Imię: {{cat.name}}</span>
             <span>Wiek: {{cat.ageMonths}} miesięcy</span>

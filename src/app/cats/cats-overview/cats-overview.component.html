@@ -3,7 +3,7 @@
     <button (click)="sortByBreed()">Sort by breed</button>
     <div class="listElement" [ngClass]="{'reserved' : cat.reserved}" *ngFor="let cat of cats">
         <div class="box">
-            <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" 
+            <img src="./assets/cats-pic/{{cat.picUrl[0]}}" alt="" 
             (click)="onClick(cat)"
             (mouseover)="onHover(cat)"
             (mouseout)="offHover(cat)">

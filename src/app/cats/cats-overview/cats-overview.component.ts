@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { Cat } from '../model';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-cats-overview',
   templateUrl: './cats-overview.component.html',
-  styleUrls: ['./cats-overview.component.scss']
+  styleUrls: ['./cats-overview.component.scss'],
 })
 export class CatsOverviewComponent implements OnInit {
   cats: Cat[] = [];

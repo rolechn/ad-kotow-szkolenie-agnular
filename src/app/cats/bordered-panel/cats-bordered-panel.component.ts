@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'cats-bordered-panel',
   templateUrl: './cats-bordered-panel.component.html',
-  styleUrls: ['./cats-bordered-panel.component.css']
+  styleUrls: ['./cats-bordered-panel.component.scss']
 })
 export class CatsBorderedPanelComponent implements OnInit {
 

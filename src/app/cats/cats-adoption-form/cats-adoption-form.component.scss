@@ -1,7 +1,15 @@
+@import 'mixinsdefs.scss';
+
 :host {
 
   display: block;
   max-width: 550px;
+
+  button {
+    &:focus {
+      @include text-shadow(darkred);
+    }
+  }
 
   .cross-validation-error input {
     border-left: 5px solid red;

@@ -1,3 +1,5 @@
+@import 'mixinsdefs.scss';
+
 .side-by-side{
     display: flex;
     flex-direction: row;
@@ -15,4 +17,10 @@
 
 img {
     margin-right: 16px;
+}
+
+button {
+    &:focus {
+        @include text-shadow(darkblue);
+    }
 }

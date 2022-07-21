@@ -16,10 +16,12 @@
     <ng-container *ngIf="adoptionFormActive">
         <app-cats-adoption-form
                 [catsName]="cat.name"
-                (closeMe)="onFormClose($event)">
+                (click) = "reserve()"
+                (closeMe)="onFormClose($event)"
+                >
         </app-cats-adoption-form>
     </ng-container>
-    <div *ngIf="showConfirmMsg">
+    <div *ngIf="showConfirmMsg" >
         <p>rezerwacja wysłana, będziemy się kontaktować</p>
     </div>
 </section>

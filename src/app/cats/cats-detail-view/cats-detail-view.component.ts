@@ -32,4 +32,8 @@ export class CatsDetailViewComponent implements OnInit {
     this.adoptionFormActive = false;
     this.showConfirmMsg = success;
   }
+
+  reserve(){
+    this.cat.reserved = true;
+  }
 }

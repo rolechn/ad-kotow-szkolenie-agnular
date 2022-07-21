@@ -5,7 +5,7 @@ export interface Cat {
   picUrl: string;
   vaccination: boolean;
   funfact: string;
-
+  reserved: boolean;
 }
 
 export interface AdoptionData {

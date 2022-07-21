@@ -5,7 +5,9 @@
         <button  (click)="sortByName()">Alphabetical order</button>
         <button (click)="sortByBreed()">Cat breed order</button>  
     </div>
-    <div class="listElement" *ngFor="let cat of cats" >
+  
+    <div [ngClass]="{'red-border' : cat.reserved == true}" class="listElement" *ngFor="let cat of cats" >
+
     <div mat-raised-button
     matTooltip={{cat.funfact}}
     matTooltipPosition="after"

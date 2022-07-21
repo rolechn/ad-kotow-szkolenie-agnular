@@ -34,4 +34,12 @@ export class CatsOverviewComponent implements OnInit {
   onHover($event: Cat) {
 
   }
+
+  sortByName() {
+    this.cats.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  sortByBreed() {
+    this.cats.sort((a, b) => a.breed.localeCompare(b.breed));
+  }
 }

@@ -11,7 +11,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TooltipModule} from "ng2-tooltip-directive";
-//import {MatTooltipModule} from '@angular/material';
+//import {MatTooltipModule} from '@angular/material/tooltip';
+
+
+
+
 
 
 @NgModule({
@@ -29,7 +33,7 @@ import {TooltipModule} from "ng2-tooltip-directive";
     AppComponent,
     CatsOverviewComponent,
     CatsDetailViewComponent,
-    CatsAdoptionFormComponent
+    CatsAdoptionFormComponent,
   ],
   bootstrap:    [ AppComponent ]
 })

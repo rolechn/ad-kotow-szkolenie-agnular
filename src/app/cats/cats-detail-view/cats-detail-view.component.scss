@@ -16,3 +16,32 @@
 img {
     margin-right: 16px;
 }
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.scroll-btn {
+  font-size: 2vw;
+  font-weight: 600;
+
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn-container {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  margin-left: 0.5vw;
+  width: 35vw;
+}
+
+.cat-image {
+  width: 35vw;
+  height: 80vh;
+}

@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TooltipModule} from "ng2-tooltip-directive";
-//import {MatTooltipModule} from '@angular/material/tooltip';
+//import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 
@@ -27,14 +27,18 @@ import {TooltipModule} from "ng2-tooltip-directive";
     HttpClientModule,
     BrowserAnimationsModule,
     TooltipModule,
-    //MatTooltipModule
+    //MatCarouselModule.forRoot(),
+
   ],
   declarations: [
     AppComponent,
     CatsOverviewComponent,
     CatsDetailViewComponent,
     CatsAdoptionFormComponent,
+
   ],
+
+
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

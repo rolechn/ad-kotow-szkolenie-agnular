@@ -10,6 +10,7 @@ import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adopti
 import { HttpClientModule } from '@angular/common/http';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import 'hammerjs'; 
 
 
@@ -22,6 +23,7 @@ import 'hammerjs';
     HttpClientModule,
     MatTooltipModule,
     BrowserAnimationsModule,
+    
   ],
   declarations: [
     AppComponent,

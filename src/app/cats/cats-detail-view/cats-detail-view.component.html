@@ -1,11 +1,16 @@
 <section>
     <div class="side-by-side">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="">
+        <img src="./assets/cats-pic/{{cat.picUrl[picIndex]}}" alt="">
         <div class="cols">
             <span class="cats-name">{{cat.name}}</span>
             <span>{{cat.ageMonths}} miesięcy</span>
             <span>{{cat.breed}}</span>
             <div *ngIf=" cat.vaccination ==  true " class = "vaccination-true"> Vaccacine✔ </div>
+            <div>    
+                <button (click) = "DecrementIndex()"> 🡰 </button>
+                <button (click)  = " IncrementIndex()"> 🡲 </button>
+            </div>
+    
     
         </div>
     </div>

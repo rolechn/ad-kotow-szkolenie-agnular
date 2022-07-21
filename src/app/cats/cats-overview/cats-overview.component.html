@@ -11,7 +11,7 @@
     <div mat-raised-button
     matTooltip={{cat.funfact}}
     matTooltipPosition="after"
-    aria-label="Button that displays a tooltip in various positions"><img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" ></div> 
+    aria-label="Button that displays a tooltip in various positions"><img src="./assets/cats-pic/{{cat.picUrl[0]}}" alt="" (click)="onClick(cat)" ></div> 
     <span>{{cat.name}}</span>
     <div *ngIf=" cat.vaccination ==  true "> Vaccacine ✔ </div>
     </div>

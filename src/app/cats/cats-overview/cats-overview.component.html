@@ -2,8 +2,14 @@
 <section>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <div class="listElement" *ngFor="let cat of cats">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)">
+        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" >
         <span>{{cat.name}}</span>
-        <div *ngIf=" cat.vaccination ==  true "> Vaccacine✔ </div>
+        <button mat-raised-button
+            matTooltip="Info about the action"
+            matTooltipPosition="after"
+            aria-label="Button that displays a tooltip in various positions">
+      Action
+    </button>
+        <div *ngIf=" cat.vaccination ==  true "> Vaccacine ✔ </div>
     </div>
 </section>

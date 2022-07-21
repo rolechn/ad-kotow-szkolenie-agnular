@@ -18,6 +18,14 @@ export class CatsOverviewComponent implements OnInit {
     this.loadCats();
   }
 
+  sortByName(){
+   this.cats.sort((a,b) => a.name.localeCompare(b.name));
+  }
+
+  sortByBreed(){
+    this.cats.sort((a,b) => a.breed.localeCompare(b.breed));
+  }
+
   private loadCats() {
     this.activatedRoute.data.subscribe(data => {
         this.cats = data['cats'];
@@ -28,4 +36,7 @@ export class CatsOverviewComponent implements OnInit {
   onClick($event: Cat) {
     this.router.navigate(['cats', $event.name]);
   }
+
+  
+ 
 }

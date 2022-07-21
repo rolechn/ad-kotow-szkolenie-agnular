@@ -6,12 +6,34 @@
 
   .listElement {
     max-width: 550px;
-    border: solid 2px #444444;
+    border: solid 2px greenyellow;
     margin: 20px 0 20px 0;
+  }
+
+  .reserved {
+    border-color: red;
   }
 
   img {
     max-width: 250px;
     max-height: 250px;
+  }
+
+  .box {
+    display: flex;
+  }
+
+  .tooltip {
+    border-width: 0.2rem;
+    border-color: #666666;
+    border-style: solid;
+    background-color: #888888;
+    color: azure;
+    margin: 0;
+    padding: 0;
+  }
+
+  .none {
+    display: none;
   }
 }

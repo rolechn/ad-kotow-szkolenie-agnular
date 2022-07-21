@@ -1,6 +1,16 @@
 <section>
-    <div class="listElement" *ngFor="let cat of cats">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)">
-        <span>{{cat.name}}</span>
+    <button (click)="sortByName()">Sort by name</button>
+    <button (click)="sortByBreed()">Sort by breed</button>
+    <div class="listElement" [ngClass]="{'reserved' : cat.reserved}" *ngFor="let cat of cats">
+        <div class="box">
+            <img src="./assets/cats-pic/{{cat.picUrl[0]}}" alt="" 
+            (click)="onClick(cat)"
+            (mouseover)="onHover(cat)"
+            (mouseout)="offHover(cat)">
+            <div>
+                <span>{{cat.name}}</span>
+                <div [ngClass]="{'tooltip' : cat.isHovering, 'none': !cat.isHovering}">{{cat.description}}</div>        
+            </div>
+        </div>
     </div>
 </section>

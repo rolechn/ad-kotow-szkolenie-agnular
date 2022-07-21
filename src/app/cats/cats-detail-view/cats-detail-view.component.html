@@ -2,9 +2,10 @@
     <div class="side-by-side">
         <img src="./assets/cats-pic/{{cat.picUrl}}" alt="">
         <div class="cols">
-            <span class="cats-name">{{cat.name}}</span>
-            <span>{{cat.ageMonths}} miesięcy</span>
-            <span>{{cat.breed}}</span>
+            <span class="cats-name">Imię: {{cat.name}}</span>
+            <span>Wiek: {{cat.ageMonths}} miesięcy</span>
+            <span>Rasa: {{cat.breed}}</span>
+            <span>Szczepiony: {{cat.vaccinated ? "\u2714" : "\u2716"}}</span>
         </div>
     </div>
 

@@ -15,7 +15,8 @@ describe('CatsDetailViewComponent', () => {
         name: 'Puszek',
         ageMonths: 8,
         breed: 'maine coon',
-        picUrl: 'puszek1.jpg'
+        picUrl: 'puszek1.jpg',
+        vaccinated: false
       }
     ))
   };

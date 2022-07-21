@@ -14,6 +14,7 @@ export class CatsOverviewComponent implements OnInit {
               private router: Router) {
   }
 
+
   ngOnInit(): void {
     this.loadCats();
   }

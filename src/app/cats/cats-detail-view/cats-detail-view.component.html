@@ -13,7 +13,12 @@
             <span>{{cat.breed}}</span>
         </div>
     </div>
-
+  <button tool-raised-button
+          matTooltip="Info about the action"
+          aria-label="Button that displays a tooltip when focused or hovered over">
+    Action
+  </button>
+  <button tooltip="Simple and <b>bold text</b>">Default tooltip</button>
     <button (click)="openAdoptionForm()">adoptuj</button>
     <button routerLink="/cats">
         <span>{{'powrót'}}</span></button>

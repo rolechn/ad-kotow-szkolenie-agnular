@@ -14,35 +14,40 @@ export class CatsDataService {
       ageMonths: 8,
       breed: 'maine coon',
       picUrl: 'puszek1.jpg',
-      vacinated : false
+      vacinated : false,
+      funFact: "Głośno mruczy"
     },
     {
       name: 'Mruczek',
       ageMonths: 36,
       breed: 'brytyjczyk',
       picUrl: 'mruczek1.jpg',
-      vacinated : true
+      vacinated : true,
+      funFact: "Wspina się na zasłony"
     },
     {
       name: 'Kiciek',
       ageMonths: 52,
       breed: 'perski',
       picUrl: 'kiciek.jpg',
-      vacinated : true
+      vacinated : true,
+      funFact : "Nie lubi truskawek"
     },
     {
       name: 'Kłaczek',
       ageMonths: 81,
       breed: 'brytyjczyk',
       picUrl: 'klaczek.jpg',
-      vacinated: true
+      vacinated: true,
+      funFact : "Lubi marchewkę"
     },
     {
       name: 'Pimpuś',
       ageMonths: 6,
       breed: 'dachowiec',
       picUrl: 'pimpus.jpg',
-      vacinated: true
+      vacinated : true,
+      funFact : "Dobrze dogaduje się z innymi zwierzętami"
     }
   ];
 

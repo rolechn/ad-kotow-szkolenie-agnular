@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { Cat } from '../model';
-import { CatsDataService } from '../cats-data.service';
-import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {Cat} from '../model';
+import {CatsDataService} from '../cats-data.service';
+import {ActivatedRoute, ActivatedRouteSnapshot} from '@angular/router';
 
 @Component({
   selector: 'app-cats-detail-view',
   templateUrl: './cats-detail-view.component.html',
-  styleUrls: ['./cats-detail-view.component.scss']
+  styleUrls: ['./cats-detail-view.component.scss'],
+
 })
 export class CatsDetailViewComponent implements OnInit {
 

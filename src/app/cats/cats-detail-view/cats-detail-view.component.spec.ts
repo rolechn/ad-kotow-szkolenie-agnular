@@ -6,6 +6,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { CatsDataService } from '../cats-data.service';
 import { of } from 'rxjs';
 
+
 describe('CatsDetailViewComponent', () => {
   let component: CatsDetailViewComponent;
   let fixture: ComponentFixture<CatsDetailViewComponent>;

@@ -8,6 +8,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { CatsDetailViewComponent } from './cats/cats-detail-view/cats-detail-view.component';
 import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adoption-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {TooltipModule} from 'ng2-tooltip-directive';
+
+import 'hammerjs';
+
 
 @NgModule({
   imports: [
@@ -15,7 +20,10 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    TooltipModule,
+
   ],
   declarations: [
     AppComponent,

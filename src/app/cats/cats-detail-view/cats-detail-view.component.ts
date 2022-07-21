@@ -31,6 +31,7 @@ export class CatsDetailViewComponent implements OnInit {
   onFormClose(success: boolean) {
     this.adoptionFormActive = false;
     this.showConfirmMsg = success;
+    this.cat.reservation = true;
   }
 
   checkVaccination(vaccinated: boolean): string {
@@ -39,4 +40,5 @@ export class CatsDetailViewComponent implements OnInit {
     else
       return '\u274C';
   }
+
 }

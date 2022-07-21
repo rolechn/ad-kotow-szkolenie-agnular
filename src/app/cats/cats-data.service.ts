@@ -15,7 +15,8 @@ export class CatsDataService {
       breed: 'maine coon',
       picUrl: 'puszek1.jpg',
       vaccinated: true,
-      description: 'Puszek nie lubi brudnej kuwety.'
+      description: 'Puszek nie lubi brudnej kuwety.',
+      reservation: false
     },
     {
       name: 'Mruczek',
@@ -23,7 +24,8 @@ export class CatsDataService {
       breed: 'brytyjczyk',
       picUrl: 'mruczek1.jpg',
       vaccinated: false,
-      description: 'Mruczek ma niezłe jazdy po kocimiętce.'
+      description: 'Mruczek ma niezłe jazdy po kocimiętce.',
+      reservation: false
     },
     {
       name: 'Kiciek',
@@ -31,7 +33,8 @@ export class CatsDataService {
       breed: 'perski',
       picUrl: 'kiciek.jpg',
       vaccinated:true,
-      description: 'Kiciek to najsympatyczniejszy kot pod słońcem!.'
+      description: 'Kiciek to najsympatyczniejszy kot pod słońcem!.',
+      reservation: false
     },
     {
       name: 'Kłaczek',
@@ -39,7 +42,8 @@ export class CatsDataService {
       breed: 'brytyjczyk',
       picUrl: 'klaczek.jpg',
       vaccinated: true,
-      description: 'Kłaczek nie pozostawia po sobie żadnych kłaczków!'
+      description: 'Kłaczek nie pozostawia po sobie żadnych kłaczków!',
+      reservation: false
     },
     {
       name: 'Pimpuś',
@@ -47,7 +51,8 @@ export class CatsDataService {
       breed: 'dachowiec',
       picUrl: 'pimpus.jpg',
       vaccinated: true,
-      description: 'Pimpuś lubi czasem chodzić swoimi ścieżkami.'
+      description: 'Pimpuś lubi czasem chodzić swoimi ścieżkami.',
+      reservation: false
     }
   ];
 

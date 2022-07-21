@@ -42,4 +42,5 @@ export class CatsOverviewComponent implements OnInit {
   sortByBreed() {
     this.cats.sort((a, b) => a.breed.localeCompare(b.breed));
   }
+
 }

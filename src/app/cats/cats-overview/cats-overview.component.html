@@ -1,8 +1,8 @@
 <section>
     <button id="name-sort-button" class="sort-button" (click)="sortByName()">Sort Cats by their name</button>
     <button id="breed-sort-button" class="sort-button"  (click)="sortByBreed()">Sort Cats by their breed</button>
-    <div class="listElement" *ngFor="let cat of cats">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" tooltip={{cat.description}} [tooltipClass]="'description'" placement="right">
+    <div class="listElement" [ngClass]="{'cat-reservation' : cat.reservation === true}"    *ngFor="let cat of cats">
+        <img class="cat-photo" src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" tooltip={{cat.description}} [tooltipClass]="'description'" placement="right">
         <span>{{cat.name}}</span>
 
     </div>

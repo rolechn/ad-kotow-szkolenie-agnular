@@ -4,6 +4,7 @@ import { CatsDetailViewComponent } from './cats-detail-view.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { CatsDataService } from '../cats-data.service';
+
 import { of } from 'rxjs';
 
 describe('CatsDetailViewComponent', () => {

@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Cat } from '../model';
 import { ActivatedRoute, Router } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-cats-overview',
   templateUrl: './cats-overview.component.html',
   styleUrls: ['./cats-overview.component.scss']
 })
+
 export class CatsOverviewComponent implements OnInit {
   cats: Cat[] = [];
 
@@ -16,6 +19,14 @@ export class CatsOverviewComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadCats();
+  }
+
+  sortByName(){
+   this.cats.sort((a,b) => a.name.localeCompare(b.name));
+  }
+
+  sortByBreed(){
+    this.cats.sort((a,b) => a.breed.localeCompare(b.breed));
   }
 
   private loadCats() {
@@ -28,4 +39,7 @@ export class CatsOverviewComponent implements OnInit {
   onClick($event: Cat) {
     this.router.navigate(['cats', $event.name]);
   }
+
+  
+ 
 }

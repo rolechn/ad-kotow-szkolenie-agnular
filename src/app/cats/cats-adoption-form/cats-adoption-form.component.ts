@@ -33,6 +33,9 @@ export class CatsAdoptionFormComponent implements OnInit {
     return this.adoptionForm.get('phone')!;
   }
 
+ 
+
+
   submit(): void {
     this.closeMe.emit(true);
     const adoptData = {
@@ -62,6 +65,8 @@ export class CatsAdoptionFormComponent implements OnInit {
       })
     });
   }
+
+  
 
   private validatePhone(): ValidatorFn {
     return (control: AbstractControl): { [key: string]: any } | null => {

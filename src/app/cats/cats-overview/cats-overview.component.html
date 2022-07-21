@@ -1,6 +1,18 @@
+
 <section>
-    <div class="listElement" *ngFor="let cat of cats">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)">
-        <span>{{cat.name}}</span>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <div class="sort-buttons"> 
+        <button  (click)="sortByName()">Alphabetical order</button>
+        <button (click)="sortByBreed()">Cat breed order</button>  
+    </div>
+  
+    <div [ngClass]="{'red-border' : cat.reserved == true}" class="listElement" *ngFor="let cat of cats" >
+
+    <div mat-raised-button
+    matTooltip={{cat.funfact}}
+    matTooltipPosition="after"
+    aria-label="Button that displays a tooltip in various positions"><img src="./assets/cats-pic/{{cat.picUrl[0]}}" alt="" (click)="onClick(cat)" ></div> 
+    <span>{{cat.name}}</span>
+    <div *ngIf=" cat.vaccination ==  true "> Vaccacine ✔ </div>
     </div>
 </section>

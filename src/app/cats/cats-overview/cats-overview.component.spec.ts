@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CatsOverviewComponent } from './cats-overview.component';
 import { RouterTestingModule } from '@angular/router/testing';
+import { Component } from '@angular/core';
 
 describe('CatsOverviewComponent', () => {
   let component: CatsOverviewComponent;
@@ -22,3 +23,6 @@ describe('CatsOverviewComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
+

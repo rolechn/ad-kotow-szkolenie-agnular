@@ -1,3 +1,5 @@
+
+
 :host {
 
   background-color: #fcfacd;
@@ -6,12 +8,28 @@
 
   .listElement {
     max-width: 550px;
-    border: solid 2px #444444;
+    border: solid 2px rgb(133, 228, 133);
     margin: 20px 0 20px 0;
+  }
+
+
+  .red-border{
+    border: solid 2px red;
   }
 
   img {
     max-width: 250px;
     max-height: 250px;
+  
   }
+
+  .vaccination-true{
+ 
+    color: rgb(88, 206, 88);
+  }
+
+
+
+
+
 }

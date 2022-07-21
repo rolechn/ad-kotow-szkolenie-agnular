@@ -11,14 +11,10 @@
             <span *ngIf="!cat.vacinated">Zaszczepiony: ❌  </span>
           </div>
             <span>{{cat.breed}}</span>
+          <button tooltip={{cat.funFact}} placement="right">Fun fact</button>
         </div>
     </div>
-  <button tool-raised-button
-          matTooltip="Info about the action"
-          aria-label="Button that displays a tooltip when focused or hovered over">
-    Action
-  </button>
-  <button tooltip="Simple and <b>bold text</b>">Default tooltip</button>
+
     <button (click)="openAdoptionForm()">adoptuj</button>
     <button routerLink="/cats">
         <span>{{'powrót'}}</span></button>

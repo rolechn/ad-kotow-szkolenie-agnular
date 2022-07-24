@@ -1,5 +1,9 @@
 <section>
-    <div class="listElement" *ngFor="let cat of cats">
+  <div class="sort-buttons">
+    <button  (click)="sortByName()">Sortuj wg imienia</button>
+    <button (click)="sortByBreed()">Sortuj wg rasy</button>
+  </div>
+  <div class="listElement" *ngFor="let cat of cats" [ngStyle]="{'border-color': (cat.adoption) ? 'red' : 'green'}">
         <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)"
              tooltip={{cat.funFact}}
              placement="right">

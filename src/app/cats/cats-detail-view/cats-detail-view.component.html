@@ -12,6 +12,10 @@
           </div>
             <span>{{cat.breed}}</span>
           <button tooltip={{cat.funFact}} placement="right">Fun fact</button>
+          <div class ="state">
+            <span *ngIf="cat.adoption">Status adopcji: zajęty </span>
+            <span *ngIf="!cat.adoption">Status adopcji: wolny</span>
+          </div>
         </div>
     </div>
 

@@ -29,4 +29,16 @@ export class CatsOverviewComponent implements OnInit {
   onClick($event: Cat) {
     this.router.navigate(['cats', $event.name]);
   }
+
+  sortByName(){
+    this.cats.sort((a,b) => a.name.localeCompare(b.name));
+  }
+
+  sortByBreed(){
+    this.cats.sort((a,b) => a.breed.localeCompare(b.breed));
+  }
+  adoption(){
+
+  }
 }
+

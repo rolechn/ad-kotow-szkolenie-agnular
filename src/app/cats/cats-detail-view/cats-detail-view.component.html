@@ -1,6 +1,8 @@
 <section>
     <div class="side-by-side">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="">
+      <button (click) ="scrollLeft()" class="scrolls"><-</button>
+      <img class="images" src="./assets/cats-pic/{{cat.picUrl[index]}}" alt="">
+      <button (click) = "scrollRight()" class="scrolls">-></button>
         <div class="cols">
             <span class="cats-name">{{cat.name}}</span>
             <span>{{cat.ageMonths}} miesięcy</span>
@@ -14,7 +16,7 @@
           <button tooltip={{cat.funFact}} placement="right">Fun fact</button>
           <div class ="state">
             <span *ngIf="cat.adoption">Status adopcji: zajęty </span>
-            <span *ngIf="!cat.adoption">Status adopcji: wolny</span>
+            <span *ngIf="!cat.adoption">Status adopcji: {{cat.state}}</span>
           </div>
         </div>
     </div>

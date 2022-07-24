@@ -19,6 +19,7 @@ export class CatsDetailViewComponent implements OnInit {
   adoptionFormActive: boolean;
   showConfirmMsg: boolean;
   private route: ActivatedRouteSnapshot;
+  index: number = 0;
 
   ngOnInit(): void {
     const catName = this.route.params['catName'];
@@ -33,5 +34,17 @@ export class CatsDetailViewComponent implements OnInit {
     this.adoptionFormActive = false;
     this.showConfirmMsg = success;
     this.cat.adoption = true;
+  }
+  scrollLeft() {
+    this.index--;
+    if (this.index < 0) {
+      this.index = this.cat.picUrl.length - 1;
+    }
+  }
+  scrollRight() {
+    this.index++;
+    if (this.index > this.cat.picUrl.length - 1) {
+      this.index = 0;
+    }
   }
 }

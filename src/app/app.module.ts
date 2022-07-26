@@ -9,20 +9,36 @@ import { CatsDetailViewComponent } from './cats/cats-detail-view/cats-detail-vie
 import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adoption-form.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {TooltipModule} from "ng2-tooltip-directive";
+//import { MatCarouselModule } from '@ngmodule/material-carousel';
+
+
+
+
+
+
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    TooltipModule,
+    //MatCarouselModule.forRoot(),
+
   ],
   declarations: [
     AppComponent,
     CatsOverviewComponent,
     CatsDetailViewComponent,
-    CatsAdoptionFormComponent
+    CatsAdoptionFormComponent,
+
   ],
+
+
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

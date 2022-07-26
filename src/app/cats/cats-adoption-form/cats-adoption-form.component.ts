@@ -38,7 +38,7 @@ export class CatsAdoptionFormComponent implements OnInit {
     const adoptData = {
       catsName: this.catsName,
       personName: this.name.value,
-      personPhone: this.phone.value
+      personPhone: this.phone.value,
     };
     this.catsAdoptionService.adopt(adoptData);
   }
@@ -75,5 +75,7 @@ export class CatsAdoptionFormComponent implements OnInit {
       return null;
     };
   };
+
+
 
 }
